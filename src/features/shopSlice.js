@@ -44,7 +44,7 @@ export const shopSlice = createSlice({
     },
 })
 
-// Action creators are generated for each case reducer function
+
 export const { addToCart, decrementQty, deleteProduct, clearCart } = shopSlice.actions
 export const shopCart = (state) => state.shop.productData
 export default shopSlice.reducer

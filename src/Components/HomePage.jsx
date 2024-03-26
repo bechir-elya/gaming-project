@@ -149,7 +149,7 @@ function HomePage() {
       <section className='section4'>
         <h3 style={{ color: 'white', textAlign: 'center', fontWeight: 'bold'}}>JOIN OUR <span>COMMUNITY</span> AND GET ALL THE <span>BENEFITS</span></h3>
         <p>Access to Exclusive Content, Exclusive Events and Workshops, Discounts and Deals, Early Access and Sneak Peeks, Community Forums or Groups and many more ! </p>
-        <button><Link to={'contact'} target='_blank'>JOIN NOW</Link></button>
+        <button><Link to={'register'} target='_blank'>JOIN NOW</Link></button>
       </section>
     </>
   )
