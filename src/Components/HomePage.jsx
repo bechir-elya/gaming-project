@@ -25,7 +25,10 @@ function HomePage() {
           <Container>
             <img src={houseLogo} alt="logo marque" />
             <h1 className='homePageTitle'>ARE YOU READY FOR YOUR NEXT CHALLENGE ?</h1>
-            <Button variant="warning"><Link to={'About us'} target='_blank'>READ MORE</Link></Button>
+            <div className='d-flex'>
+              <Button variant="warning" style={{marginRight:'2%'}}><Link to={'About us'} target='_blank'>READ MORE</Link></Button>
+              <Button variant="warning"><Link to={'login'} target='_blank'>LOG IN</Link></Button>
+            </div>
           </Container>
         </div>
       </section>
@@ -147,7 +150,7 @@ function HomePage() {
       </section>
 
       <section className='section4'>
-        <h3 style={{ color: 'white', textAlign: 'center', fontWeight: 'bold'}}>JOIN OUR <span>COMMUNITY</span> AND GET ALL THE <span>BENEFITS</span></h3>
+        <h3 style={{ color: 'white', textAlign: 'center', fontWeight: 'bold' }}>JOIN OUR <span>COMMUNITY</span> AND GET ALL THE <span>BENEFITS</span></h3>
         <p>Access to Exclusive Content, Exclusive Events and Workshops, Discounts and Deals, Early Access and Sneak Peeks, Community Forums or Groups and many more ! </p>
         <button><Link to={'register'} target='_blank'>JOIN NOW</Link></button>
       </section>
