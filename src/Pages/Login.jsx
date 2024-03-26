@@ -16,7 +16,7 @@ function Login() {
   function connectProfile() {
     const data = JSON.parse(localStorage.getItem('userData'));
 
-    const userIndex = data.findIdex((item) => item.email === email);
+    const userIndex = data.findIndex((item) => item.email === email);
     if (userIndex == -1) {
       setErrorEmail('User not found');
     } else {
@@ -36,13 +36,13 @@ function Login() {
           <div className='mainDiv'>
             <img src={gbg} alt="gaming bg" className='loginBG'/>
             <div className='logFormular'>
-              <div className='d-flex align-items-baseline w-50' style={{ margin: 'auto' }}>
+              <div className='w-50' style={{ margin: 'auto' }}>
                 <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}  />
-                {<span>{errorEmail}</span>}
+                <span style={{color:'red'}}>{errorEmail}</span>
               </div>
-              <div className='d-flex align-items-baseline w-50' style={{ margin: 'auto' }}>
+              <div className='w-50' style={{ margin: 'auto' }}>
                 <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                {<span>{errorPassword}</span>}
+                <span style={{color:'red'}}>{errorPassword}</span>
               </div>
               <Button variant="primary" className='d-block' style={{ margin: 'auto' }} onClick={connectProfile}>Log in</Button>
             </div>
