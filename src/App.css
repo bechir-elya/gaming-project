@@ -477,3 +477,28 @@ height: 380px;
     text-align: center;
     color: white;
 }
+
+.loginPage {
+background-color: black;
+}
+
+.mainDiv {
+    position: relative;
+    padding: 5%;
+}
+
+.loginBG {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.logFormular {
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 77%;
+}
